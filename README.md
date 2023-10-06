@@ -1,28 +1,20 @@
 # movie-grabber
 
 ## Description
-
-![Alt text](assets/images/Screenshot_2023-10-05_at_1.53.49_PM.png)
-
-Simple movie search application, displays poster, title and overview. 
-
-https://solomonkrow.github.io/movie-grabber/
+Movie-Grabber is a simple movie search application. The user can click on the search bar and enter a movie name, click search and the application displays a list of movies with similar titles. Each movie card gives the basic info for that movie along with the movie poster. The user can create a custom named list of movies user wants to watch by adding a watchlist. 
 
 ## Usage
-
-Click on search bar and enter movie name, click search and application displays list of movies. Can create a custom named list of movies user wants to watch by selection a dropdown and clicking button.
+Access Movie-Grabber at [https://gfuselier.github.io/movie-grabber/](https://gfuselier.github.io/movie-grabber/)
+![Screenshot of the application](assets/images/Screenshot_2023-10-05_at_1.53.49_PM.png)
 
 ## Technologies
-```
-Bulma CSS Framework
-Open Movie Database (OMDB) API
-Movie Database (TMDB) API
-```
+* Bulma CSS Framework
+* The Open Movie Database (OMDB) API
+* The Movie Database (TMDB) API
+
 ## Acknowledgements
-```
-Holden
-Giselle
-Josiah
-Mohit
-Fred
-```
+Collaborators:
+* Holden Harvey
+* Josiah Thomas
+* Mohit Dhankher
+* Fred Kamm
