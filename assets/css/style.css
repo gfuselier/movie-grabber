@@ -1,119 +1,121 @@
 body {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.home-btn{
-    background-color: white;
-    padding: 10px 20px;
-    border-radius: 30px;
+.home-btn {
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
 }
+
 header h1 {
-    background-color: gray;
-    font-weight: 900;
-    font-size: x-large;
-    font-style: italic;
-    color: gold;
+  background-color: gray;
+  font-weight: 900;
+  font-size: x-large;
+  font-style: italic;
+  color: gold;
 }
 
 #movie-info {
-    border: 1px solid black;
-    border-radius: 5px;
-    background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: white;
 }
 
 aside {
-    background-color: white;
-    border-radius: 5px;
+  background-color: white;
+  border-radius: 5px;
 }
 
 #genres {
-    list-style-type: none;
-    display: flex;
+  list-style-type: none;
+  display: flex;
 }
 
 .add {
-    display: flex;
+  display: flex;
 
 }
 
 aside {
   margin-bottom: 200px;
 }
+
 img {
   object-fit: contain;
   width: 300px;
 }
+
 /* start of card formatting */
-  .card {
+.card {
 
-    
-    &.is-horizontal {
+
+  &.is-horizontal {
+    display: flex;
+
+    .card-image {
+      height: 100%;
+      margin-right: 20px;
+    }
+
+    .card-stacked {
+      flex-direction: column;
+      flex: 1 1 auto;
       display: flex;
-      
-      .card-image {
-        height: 100%;
-        margin-right: 20px;
-      }
-      
-      .card-stacked {
-        flex-direction: column;
-        flex: 1 1 auto;
-        display: flex;
-        position: relative;
-        
-        .card-content {
-          flex-grow: 1;
-        }
-      }
+      position: relative;
 
-      .card-stacked h3 {
-        font-size: 40px;
-        font-weight: 900;
-      }
-
-      .card-stacked p {
-        font-size: 20px;
-      }
-
-      .card-stacked hr {
-        margin: 12px;
+      .card-content {
+        flex-grow: 1;
       }
     }
-    
-    &.is-fullimage {
-       background-color: transparent;
-      .card-image {
-        color: #fff !important;
-        .card-stacked {
-          position: absolute;
-          bottom: 0;
-          width: 100%;
-          background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
-          text-shadow: 0px 0px 2px #000000;
-          
-          .card-footer { 
-            border-color: transparent;
-          }
-          
-          .title, 
-          .subtitle { 
-            color: inherit;
-          }
-          
-          a {
-            color: inherit;
-            
-            &:hover {
-              text-decoration: underline;
-            }
-          }
-        } 
-      }
-    }  
- 
+
+    .card-stacked h3 {
+      font-size: 40px;
+      font-weight: 900;
+    }
+
+    .card-stacked p {
+      font-size: 20px;
+    }
+
+    .card-stacked hr {
+      margin: 12px;
+    }
   }
 
+  &.is-fullimage {
+    background-color: transparent;
 
+    .card-image {
+      color: #fff !important;
 
+      .card-stacked {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
+        text-shadow: 0px 0px 2px #000000;
+
+        .card-footer {
+          border-color: transparent;
+        }
+
+        .title,
+        .subtitle {
+          color: inherit;
+        }
+
+        a {
+          color: inherit;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+}
